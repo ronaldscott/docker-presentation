@@ -1,4 +1,4 @@
-# Intro to Docker
+# Intro to Docker and Containers
 
 Ron Scott
 
@@ -6,33 +6,25 @@ https://github.com/ronaldscott
 
 ---
 
-## Intro to Containers
-
----
-
-### Containers
+#### Containers
 
 * run
 * package
 * deploy
 
-...software in isolation
-
-A process running in a container is sandboxed from the host OS.
+software in isolation.
 
 ---
 
-### Is a container a kind of virtual machine?
+#### Virtual Machines?
 
-Containers are not virtual machines, but...
-
-thinking of them as VMs provides a useful comparison.
-
-The functionality is similar, and many of the concepts translate well.
+* Containers are not virtual machines
+* thinking of them as VMs provides a useful comparison
+* The functionality is similar, and many of the concepts translate well.
 
 ---
 
-### Is a container a kind of virtual machine?
+#### Virtual Machines?
 
 Most of the time, you can think of a container as a tiny, lightweight VM for just one process
 
@@ -40,19 +32,19 @@ Most of the time, you can think of a container as a tiny, lightweight VM for jus
 
 ---
 
-### VMs vs Containers
+#### VMs vs Containers
 
 ![VMs vs. Containers](https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg)
 
 ---
 
-### Operating System Features
+#### Operating System Features
 
 A combination of OS features makes containers possible.
 
 ---
 
-### cgroups
+#### cgroups
 
 > cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, network etc.) of a collection of processes. 
 
@@ -60,7 +52,7 @@ A combination of OS features makes containers possible.
 
 ---
 
-### Namespaces
+#### Namespaces
 
 > Namespaces are a feature of the Linux kernel that isolates and virtualizes system resources of a collection of processes. Examples of resources that can be virtualized include process IDs, hostnames, user IDs, network access, interprocess communication, and filesystems.
 
@@ -211,19 +203,19 @@ Anyone can self-host a private Docker registry. Many organizations do so. This i
 
 ---
 
-### Docker on Windows
+#### Docker on Windows
 
 Docker, Inc. also maintains a Windows-native version of Docker.
 
 ---
 
-### Linux Containers on Windows
+#### Linux Containers on Windows
 
 Docker for Windows can use Hyper-V to run a fully virtualized Linux environment, which, in turn, hosts containers.
 
 ---
 
-### Linux Containers caveat
+#### Linux Containers caveat
 
 Enabling Hyper-V disables all other VM products. You can't use VirtualBox or VMWare.
 
@@ -265,3 +257,5 @@ Windows 10 (Professional or Enterprise) and Windows Server 2016 offer _native su
 ---
 
 ## FIN
+
+https://github.com/ronaldscott/docker-presentation
