@@ -1,50 +1,78 @@
 # Intro to Docker
 
+Ron Scott
+https://github.com/ronaldscott
 ---
 
 ## Intro to Containers
 
 ---
 
-Containers are a way of packaging, running, and deploying software in isolation. A process or collection of processes running within a container is sandboxed from the rest of the operating system. Containers are not virtual machines, but thinking of them as VMs provides a useful comparison, because the functionality is similar and many of the concepts translate well.
+### Containers
+
+* run
+* package
+* deploy
+
+...software in isolation
+
+A process running in a container is sandboxed from the host OS.
 
 ---
 
-If a VM runs an entire operating system in a fully virtualized environment, a container runs just one or more virtualized processes, _without_ needing to incur the heavy performance penalty of spinning up an entire virtual machine.
+### Is a container a kind of virtual machine?
+
+Containers are not virtual machines, but...
+thinking of them as VMs provides a useful comparison.
+The functionality is similar and many of the concepts translate well.
 
 ---
 
-![VMs vs. Containers][vmsvscontainers]
+Most of the time, you can think of a container as a tiny, lightweight VM for just one process
+
+(_even though that's not strictly accurate_)
+
+---
+
+### VMs vs Containers
+
+![VMs vs. Containers](https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg)
 
 ---
 
 ### Operating System Features
 
----
-
-The combination of these related, but distinct, OS features is what makes containers possible. This is a non-comprehensive list; other kernel features are involved, especially related to security, but for the sake of time I will mention only the major features.
+A combination of OS features makes containers possible.
 
 ---
 
-#### cgroups
+### cgroups
 
-cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, network etc.) of a collection of processes. [wikipedia](https://en.wikipedia.org/wiki/Cgroups)
+> cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, network etc.) of a collection of processes. 
+
+-- [wikipedia: cgroups](https://en.wikipedia.org/wiki/Cgroups)
 
 ---
 
-#### Namespaces
+### Namespaces
 
-Namespaces are a feature of the Linux kernel that isolates and virtualizes system resources of a collection of processes. Examples of resources that can be virtualized include process IDs, hostnames, user IDs, network access, interprocess communication, and filesystems. [wikipedia](https://en.wikipedia.org/wiki/Linux_namespaces)
+> Namespaces are a feature of the Linux kernel that isolates and virtualizes system resources of a collection of processes. Examples of resources that can be virtualized include process IDs, hostnames, user IDs, network access, interprocess communication, and filesystems. 
+
+--[wikipedia: Linux namespaces](https://en.wikipedia.org/wiki/Linux_namespaces)
 
 ---
 
 #### Union Mounting
 
-Union Mounting - In computer operating systems, union mounting is a way of combining multiple directories into one that appears to contain their combined contents.[1] Union mounting is supported in Linux, BSD and several of its successors, and Plan 9, with similar but subtly different behavior. [wikipedia](https://en.wikipedia.org/wiki/Union_mount)
+> In computer operating systems, union mounting is a way of combining multiple directories into one that appears to contain their combined contents.[1] Union mounting is supported in Linux, BSD and several of its successors, and Plan 9, with similar but subtly different behavior. 
+
+--[wikipedia: Union mount](https://en.wikipedia.org/wiki/Union_mount)
 
 ---
 
-![Union Mounting][unionmounting]
+#### Union Mounting
+
+![Union Mounting](http://cecs.wright.edu/~pmateti/Courses/3900/Lectures/Internals/Figures/mount-bind.png)
 
 ---
 
@@ -214,14 +242,6 @@ Docker has many uses, including, but not limited to:
 * **Infrastructure as code**: All configuration and setup for a container are repeatable and stored in a repo
 * **Simplified dev environment**: run server dependencies as appliances instead of as native installations in the host environment
 * **Ease dependency hell**: Different containers can have their own library versions on the same host environment
-
----
-
-[vmsvscontainers]:https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg
-"From the web"
-
-[unionmounting]: http://cecs.wright.edu/~pmateti/Courses/3900/Lectures/Internals/Figures/mount-bind.png
-"From the web"
 
 [dockerarchitecture]:
 https://docs.docker.com/engine/images/architecture.svg
