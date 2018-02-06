@@ -123,13 +123,13 @@ Docker provides a lot of higher-level concepts, APIs, apps, and infrastructure o
 
 #### Image
 
-> An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.
+> An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization.
 
 --[docker](https://docs.docker.com/engine/docker-overview/#docker-objects)
 
 ---
 
-Images are
+#### Images
 
 * _Built_ from a set of instructions called a _Dockerfile_
 * Not checked into source control; _Dockerfiles_ are
@@ -207,7 +207,7 @@ The [Docker Hub](https://hub.docker.com/) is the official image registry. Simila
 
 #### Private Registry
 
-Anyone can self-host a private Docker registry. Many organizations do so. This is analogous to hosting a private package registry link NuGet.
+Anyone can self-host a private Docker registry. Many organizations do so. This is analogous to hosting a private package registry, like NuGet.
 
 ---
 
@@ -237,19 +237,19 @@ Windows 10 (Professional or Enterprise) and Windows Server 2016 offer _native su
 
 #### Demo: Development workflow
 
-* Build and run some code in a container
+<!-- Build and run some code in a container --
 
 ---
 
 #### Demo: Appliance hosting
 
-* Pull some common appliance and run it
+<!-- Pull some common appliance and run it -->
 
 ---
 
 #### Demo: AWS ECS
 
-* Push first container to ECS and run them there
+<!-- Push first container to ECS and run them there -->
 
 ---
 
@@ -261,3 +261,7 @@ Windows 10 (Professional or Enterprise) and Windows Server 2016 offer _native su
 * **Infrastructure as code**: All configuration and setup for a container are repeatable and stored in a repo
 * **Simplified dev environment**: run server dependencies as appliances instead of as native installations in the host environment
 * **Ease dependency hell**: Different containers can have their own library versions on the same host environment
+
+---
+
+## FIN
