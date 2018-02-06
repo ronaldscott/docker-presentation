@@ -48,7 +48,7 @@ A combination of OS features makes containers possible.
 
 > cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, network etc.) of a collection of processes. 
 
--- [wikipedia: cgroups](https://en.wikipedia.org/wiki/Cgroups)
+—[wikipedia: cgroups](https://en.wikipedia.org/wiki/Cgroups)
 
 ---
 
@@ -56,15 +56,15 @@ A combination of OS features makes containers possible.
 
 > Namespaces are a feature of the Linux kernel that isolates and virtualizes system resources of a collection of processes. Examples of resources that can be virtualized include process IDs, hostnames, user IDs, network access, interprocess communication, and filesystems.
 
---[wikipedia: Linux namespaces](https://en.wikipedia.org/wiki/Linux_namespaces)
+—[wikipedia: Linux namespaces](https://en.wikipedia.org/wiki/Linux_namespaces)
 
 ---
 
 #### Union Mounting
 
-> In computer operating systems, union mounting is a way of combining multiple directories into one that appears to contain their combined contents. Union mounting is supported in Linux, BSD and several of its successors, and Plan 9, with similar but subtly different behavior.
+> In computer operating systems, union mounting is a way of combining multiple directories into one that appears to contain their combined contents.
 
---[wikipedia: Union mount](https://en.wikipedia.org/wiki/Union_mount)
+—[wikipedia: Union mount](https://en.wikipedia.org/wiki/Union_mount)
 
 ---
 
@@ -117,7 +117,7 @@ Docker provides a lot of higher-level concepts, APIs, apps, and infrastructure o
 
 > An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization.
 
---[docker](https://docs.docker.com/engine/docker-overview/#docker-objects)
+—[docker](https://docs.docker.com/engine/docker-overview/#docker-objects)
 
 ---
 
@@ -163,7 +163,7 @@ EXPOSE 28015 29015 8080
 
 > A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it, or even create a new image based on its current state.
 
---[docker](https://docs.docker.com/engine/docker-overview/#docker-objects)
+—[docker](https://docs.docker.com/engine/docker-overview/#docker-objects)
 
 ---
 
@@ -187,7 +187,7 @@ Client/server application
 
 > The Docker Registry is a stateless, highly scalable server side application that stores and lets you distribute prebuilt Docker images. The Registry is open-source, under the permissive Apache license. 
 
---[docker](https://docs.docker.com/registry/)
+—[docker](https://docs.docker.com/registry/)
 
 ---
 
